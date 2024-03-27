@@ -1,7 +1,6 @@
 {  
   type = "fluid",
   name = "contaminated-oil",
-  order = "b[fluid]-b[c
   icon = "__advanceder-oil__/graphics/contaminatedOil.png",
   icon_size = 64,
   default_temperatire = 25,
