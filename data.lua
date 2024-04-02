@@ -25,7 +25,7 @@ local contaminated-oil-processing = {
   {
     {type="fluid", name="crude-oil", amount=20, probability = 0.25}, --lmao have fun balancing this (idrk if this is balanced but whatever)
     {type="item", name="stone", amount=1},
-    {type="fluid", name="petroleum-gas", amount=40,  probability = 0.75},
+    {type="fluid", name="petroleum-gas", amount=40,  probability = 0.74},
     {type="fluid", name="water", amount=30}
   },
   allow_decomposition = false
