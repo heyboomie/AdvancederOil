@@ -15,6 +15,9 @@ local contaminated-oil = {
 local contaminated-oil-processing = {
   type = "recipe",
   name = "contaminated-oil-processing"
+  icon_sieze = 64,
+  icon = "__advanceder-oil__/graphics/contaminatedoilProcessing.png",
+  hide_from_player_crafting = true,
   enabled = false,
   energy_required = 10,
   ingredients = 
@@ -30,4 +33,26 @@ local contaminated-oil-processing = {
   },
   allow_decomposition = false
 }
+local shall-fracker = {
+  type
+local contaminated-oil-processing-research = {
+  type = "technology",
+  name = "contaminated-oil-processing-research",
+  icon_size = 64,
+  icon = "__advanceder-oil__/graphics/contaminatedoilProcessing.png",
+  effects = 
+  {
+    {
+      type = "unlock_recipe",
+      recipe = "contaminated-oil-processing"
+    },
+    {
+      type = "unlock_recipe",
+      recipe = "shall-oil-extraction"
+    },  
+    {
+      type = "unlock_recipe",
+      recipe = "shall-fracker"
+    },
+  }
   
