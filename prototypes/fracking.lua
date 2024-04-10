@@ -32,7 +32,7 @@ data:extend(
     name = "frac-pump",
     icon = "__advanceder-oil__/graphics/frac-pump.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "burner-pumpjack"},
+    minable = {mining_time = 1, result = "frac-pump"},
     resource_categories = {"basic-fluid"},
     max_health = 100,
     corpse = "big-remnants",
@@ -40,20 +40,7 @@ data:extend(
     collision_box = {{ -1.4, -1.4}, {1.4, 1.4}},
     selection_box = {{ -1.5, -1.5}, {1.5, 1.5}},
     drawing_box = {{-1.6, -2.5}, {1.5, 1.6}},
-    energy_source =
-    {
-      type = "burner",
-      effectivity = 1,
-      fuel_inventory_size = 1,
-      smoke =
-      {
-        {
-          name = "smoke",
-          deviation = {0.1, 0.1},
-          frequency = 0.3
-        }
-      }
-    },
+    energy_source = {type = "electric"},
     fluid_box =
     {
       base_area = 1,
@@ -66,7 +53,7 @@ data:extend(
         }
       },
     },
-    energy_usage = "90kW",
+    energy_usage = "105kW",
     mining_speed = 1,
     mining_power = 2,
     resource_searching_radius = 0.49,
