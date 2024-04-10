@@ -1,1 +1,34 @@
-
+data:extend({
+  {
+    type = "resource",
+    name = "mineral-water",
+    icon = kr_resources_icons_path .. "mineral-water.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    flags = { "placeable-neutral" },
+    category = "basic-fluid",
+    subgroup = "raw-resource",
+    order = "a-b-a",
+    infinite = false,
+    map_grid = false,
+    highlight = true,
+    minimum = 20000,
+    normal = 75000,
+    infinite_depletion_amount = 10,
+    resource_patch_search_radius = 12,
+    tree_removal_probability = 1,
+    tree_removal_max_distance = 32 * 32,
+    minable = {
+      mining_time = 1,
+      results = {
+        {
+          type = "fluid",
+          name = "mineral-water",
+          amount_min = 20,
+          amount_max = 20,
+          probability = 1,
+        },
+      },
+    },
+    collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
+    selection_box = { { -1, -1 }, { 1, 1 } },
